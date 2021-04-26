@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-	Category Index
+	Category Index TUSAR
 @endsection
 
 @section('container')
@@ -32,7 +32,7 @@
 								<td>{{$category->name}}</td>
 								<td>{{$category->details}}</td>
 								<td>
-									<a href="/category/edit/{{$category->id}}" class="btn btn-warning">Edit</a> | 
+									<a href="/category/edit/{{$category->id}}" class="btn btn-warning">Edit</a> |
 
 									{{-- <form method="post" action="/category/destroy">
 										@csrf()
@@ -45,7 +45,7 @@
 							</tr>
 
 						@endforeach
-							
+
 					</tbody>
 				</table>
 			</div>
