@@ -34,11 +34,13 @@
 								<td>
 									<a href="/category/edit/{{$category->id}}" class="btn btn-warning">Edit</a> | 
 
-									<form method="post" action="/category/destroy">
+									{{-- <form method="post" action="/category/destroy">
 										@csrf()
 										<input type="text" hidden name="id" value="{{$category->id}}">
 										<button type="submit" class="btn btn-danger">Delete</button>
-									</form>
+									</form> --}}
+
+									<button class="btn btn-danger btn-flat btn-sm remove-category" data-id="{{ $category->id }}" data-action="/category/destroy">Delete</button>
 								</td>
 							</tr>
 
