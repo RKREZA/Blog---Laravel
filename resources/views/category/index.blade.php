@@ -4,6 +4,14 @@
 	Category Index TUSAR
 @endsection
 
+@push('css')
+    <style type="text/css">
+    	body{
+    		background-color: red;
+    	}
+    </style>
+@endpush
+
 @section('container')
 	<div class="container">
 
@@ -46,6 +54,10 @@
 
 						@endforeach
 
+
+						@env(['staging', 'local'])
+    						The application is running in "staging" or "production"...
+						@endenv
 					</tbody>
 				</table>
 			</div>

@@ -4,6 +4,14 @@
 	Category Create
 @endsection
 
+@push('css')
+    <style type="text/css">
+    	body{
+    		background-color: blue;
+    	}
+    </style>
+@endpush
+
 @section('container')
 	<div class="container">
 		<div class="row">
