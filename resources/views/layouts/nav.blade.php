@@ -12,6 +12,19 @@
         <li class="nav-item">
           <a class="nav-link" href="/category/index">Category</a>
         </li>
+
+        @if(auth()->check())
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>
+          </li>
+        @else
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">Sign Up</a>
+          </li>
+        @endif
     </div>
   </div>
 </nav>

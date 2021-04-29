@@ -17,7 +17,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				
-				<form method="post" action="/category/store">
+				<form method="post" action="{{route('category.store')}}">
 					@csrf()
 					<div class="input-group mb-3 mt-5">
 						<label for="name" class="input-group-text">Name</label>
