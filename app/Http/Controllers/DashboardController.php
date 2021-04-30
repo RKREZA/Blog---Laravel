@@ -15,6 +15,7 @@ class DashboardController extends Controller
 	function __construct(User $user)
 	{
 		$this->user = $user;
+        
 	}
 
     public function index()
